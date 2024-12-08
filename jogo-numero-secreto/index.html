@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Preload para fontes específicas melhora o desempenho ao pré-carregar apenas as fontes necessárias-->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Fonte externa -->
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>JS Game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__conteudo">
+            <!-- Imagem principal com descrição -->
+            <img src="./img/robot.png" alt="Ilustação de um robô mergulhador" class="container__imagem-robo" />
+            <div class="container__informacoes">
+                <!-- Ícone de troféu com descrição -->
+                <img src="./img/trophy.png" alt="Ícone ilustrando um troféu, representando uma conquista" />
+                <div class="container__texto">
+                    <!-- Texto de feedback -->
+                    <h1>Você <span class="container__texto-azul">acertou!</span></h1>
+                    <h2>Você descobriu o número secreto!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- O atributo defer assegura que o JavaScript seja executado após o DOM estar pronto. -->
+    <script src="app.js" defer></script>
+</body>
+
+</html>

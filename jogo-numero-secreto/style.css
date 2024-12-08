@@ -1,0 +1,121 @@
+/* Reset e configurações globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-branco: #ffffff;
+    --cor-azul: #1875E8;
+    --cor-azul-gradiente-inicio: #1354A5;
+    --cor-azul-gradiente-meio: #041832;
+    --cor-azul-gradiente-fim: #01080E;
+    --sombra: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    --fonte-titulo: 'Chakra Petch', sans-serif;
+    --fonte-texto: 'Inter', sans-serif;
+    --padding-padrao: 16px;
+    --radius-padrao: 16px;
+}
+
+/* Corpo da página */
+body {
+    background: linear-gradient(
+        var(--cor-azul-gradiente-inicio) 0%, 
+        var(--cor-azul-gradiente-meio) 33.33%, 
+        var(--cor-azul-gradiente-meio) 66.67%, 
+        var(--cor-azul-gradiente-fim) 100%
+    );
+    color: var(--cor-branco);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-texto);
+    position: relative;
+}
+
+body::before {
+    background-image: url("img/code.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* Container principal */
+.container {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    border: 1px solid var(--cor-azul);
+    box-shadow: var(--sombra);
+    background-image: url("img/Ruido.png");
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Conteúdo dentro do container */
+.container__conteudo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.container__informacoes {
+    flex: 1;
+    padding: var(--padding-padrao);
+}
+
+.container__texto {
+    margin: var(--padding-padrao) 0;
+}
+
+.container__texto-azul {
+    color: var(--cor-azul);
+}
+
+/* Botão */
+.container__botao {
+    border-radius: var(--radius-padrao);
+    background: var(--cor-azul);
+    padding: var(--padding-padrao) 24px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    margin-top: var(--padding-padrao);
+    color: var(--cor-branco);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container__botao:hover {
+    background: darken(var(--cor-azul), 10%);
+}
+
+/* Títulos */
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+/* Fonte geral */
+h2, p, button {
+    font-family: var(--fonte-texto);
+}
