@@ -22,7 +22,7 @@ This repository is a work in progress! If you have feedback, suggestions, or ide
 ### 📬 Get in Touch
 Are you studying too or want to share experiences? Let’s connect! 😊
 * 📩 [LinkedIn](https://www.linkedin.com/in/thiagocqueiroz/)
-* 🌐 [Portfolio](https://thiagocesar.com/)
+* 🌐 [Website](https://thiagocesar.com/)
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -48,4 +48,4 @@ Este repositório está em constante evolução! Caso tenha feedback, sugestões
 ### 📬 Entre em Contato
 Também está estudando ou quer compartilhar experiências? Vamos nos conectar! 😊
 * 📩 [LinkedIn](https://www.linkedin.com/in/thiagocqueiroz/)
-* 🌐 [Portfolio](https://thiagocesar.com/)
+* 🌐 [Website](https://thiagocesar.com/)
